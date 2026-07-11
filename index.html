@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Prabanjan U V | Frontend & Java Full Stack Developer Portfolio</title>
+  <meta name="description" content="Professional portfolio of Prabanjan U V, a Frontend & Java Full Stack Developer based in Bengaluru, India. Specialized in HTML, CSS, JavaScript, Java, MySQL, and modern responsive web layouts.">
+  <meta name="keywords" content="Prabanjan U V, Full Stack Developer, Java, Frontend Developer, Web Developer Portfolio, Bengaluru Developer, TAP Academy, IBM Internship">
+  <meta name="author" content="Prabanjan U V">
+  
+  <!-- Open Graph / Social Media Metas -->
+  <meta property="og:title" content="Prabanjan U V | Frontend & Java Full Stack Developer">
+  <meta property="og:description" content="Explore my portfolio showcasing modern web apps, Java backend integration, and certifications.">
+  <meta property="og:type" content="website">
+  
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 1. Preloader Overlay -->
+  <div class="preloader" aria-hidden="true">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- Ambient Ambient Background Blobs & Grid -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container" aria-hidden="true">
+    <div class="scroll-progress-bar"></div>
+  </div>
+
+  <!-- 2. Sticky Header & Navigation -->
+  <header class="header">
+    <div class="container">
+      <a href="#home" class="logo" aria-label="Prabanjan Portfolio Home">
+        Prabanjan<span class="logo-dot"></span>dev
+      </a>
+      
+      <!-- Desktop & Mobile Menu Navigation -->
+      <nav class="navbar" id="navbar" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Light/Dark Mode Switcher -->
+        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle light and dark theme">
+          <!-- Sun Icon -->
+          <svg class="sun-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <!-- Moon Icon -->
+          <svg class="moon-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile hamburger menu button -->
+        <button class="hamburger-btn" aria-expanded="false" aria-controls="navbar" aria-label="Open mobile menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 3. Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="hero-tag-pulse" aria-hidden="true"></span>
+            Available for Opportunities
+          </div>
+          <h1 class="hero-name">Prabanjan U V</h1>
+          <p class="hero-title text-gradient">Frontend Developer | Java Full Stack Developer</p>
+          <p class="hero-desc">
+            Passionate software engineer specializing in crafting visually stunning, fully responsive frontend interfaces while building robust, high-performance Java backend solutions.
+          </p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">
+              View Projects
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
+            <!-- Custom Resume Action placeholder -->
+            <a href="#" class="btn btn-secondary" onclick="alert('Resume download triggered!'); return false;">
+              Download Resume
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/Prabhu-2004-04" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/prabanjan-u-v-12286a248/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="mailto:prabanjanuv@gmail.com" class="social-icon" aria-label="Send Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image-container">
+          <div class="hero-image-wrapper">
+            <img src="assets/images/profile.png" alt="Prabanjan U V portrait" class="hero-image" loading="eager">
+          </div>
+          <!-- Hero Section Floating Shapes -->
+          <div class="hero-shapes" aria-hidden="true">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. About Me Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Bridging Code and User Experience</h2>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-stats animate-on-scroll">
+            <div class="stat-card">
+              <div class="stat-num" data-target="10" data-suffix="+">0</div>
+              <div class="stat-label">Projects Built</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num" data-target="1" data-suffix="">0</div>
+              <div class="stat-label">Internship</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num" data-target="3" data-suffix="+">0</div>
+              <div class="stat-label">Certificates</div>
+            </div>
+          </div>
+
+          <div class="about-details animate-on-scroll">
+            <p class="about-p">
+              Hi, I'm <strong>Prabanjan U V</strong>. I am a software developer with a strong focus on frontend styling and interface design, combined with solid training in Java enterprise architectures. My passion lies in constructing fluid, interactive, and responsive web systems that feel intuitive to use.
+            </p>
+            <p class="about-p">
+              With a background in Information Technology, I love exploring the intersections of user requirements, modern styling frameworks, database structures, and backend services. I aim to write highly clean, maintainable, and recruiter-friendly code that complies with the latest accessibility benchmarks.
+            </p>
+            
+            <div class="about-info-list">
+              <div class="about-info-item">
+                <span class="about-info-icon" aria-hidden="true">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2a8 8 0 00-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 00-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </span>
+                <span class="about-info-text">Bengaluru, India</span>
+              </div>
+              <div class="about-info-item">
+                <span class="about-info-icon" aria-hidden="true">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                </span>
+                <span class="about-info-text">prabanjanuv@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">Skills</span>
+          <h2 class="section-title">My Tech Ecosystem</h2>
+        </div>
+        
+        <div class="skills-grid">
+          <!-- Frontend skills category -->
+          <div class="skills-category-card animate-on-scroll">
+            <div class="skills-card-header">
+              <span class="skills-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </span>
+              <h3 class="skills-card-title">Frontend</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skills-item">
+                <div class="skill-info"><span class="skill-name">HTML5</span><span class="skill-percentage">95%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" data-progress="95"></div></div>
+              </div>
+              <div class="skills-item">
+                <div class="skill-info"><span class="skill-name">CSS3</span><span class="skill-percentage">90%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" data-progress="90"></div></div>
+              </div>
+              <div class="skills-item">
+                <div class="skill-info"><span class="skill-name">JavaScript (ES6+)</span><span class="skill-percentage">85%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" data-progress="85"></div></div>
+              </div>
+              <div class="skills-item">
+                <div class="skill-info"><span class="skill-name">Responsive Design</span><span class="skill-percentage">95%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" data-progress="95"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend skills category -->
+          <div class="skills-category-card animate-on-scroll">
+            <div class="skills-card-header">
+              <span class="skills-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              </span>
+              <h3 class="skills-card-title">Backend</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skills-item">
+                <div class="skill-info"><span class="skill-name">Java Core / OOPs</span><span class="skill-percentage">85%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" data-progress="85"></div></div>
+              </div>
+              <div class="skills-item">
+                <div class="skill-info"><span class="skill-name">JDBC</span><span class="skill-percentage">80%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" data-progress="80"></div></div>
+              </div>
+              <div class="skills-item">
+                <div class="skill-info"><span class="skill-name">Servlets</span><span class="skill-percentage">75%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" data-progress="75"></div></div>
+              </div>
+              <div class="skills-item">
+                <div class="skill-info"><span class="skill-name">JSP</span><span class="skill-percentage">75%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" data-progress="75"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Database category -->
+          <div class="skills-category-card animate-on-scroll">
+            <div class="skills-card-header">
+              <span class="skills-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+              </span>
+              <h3 class="skills-card-title">Database</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skills-item">
+                <div class="skill-info"><span class="skill-name">MySQL</span><span class="skill-percentage">85%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" data-progress="85"></div></div>
+              </div>
+              <div class="skills-item">
+                <div class="skill-info"><span class="skill-name">SQL Queries / Joins</span><span class="skill-percentage">80%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" data-progress="80"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools category -->
+          <div class="skills-category-card animate-on-scroll">
+            <div class="skills-card-header">
+              <span class="skills-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </span>
+              <h3 class="skills-card-title">Tools & Others</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skills-item">
+                <div class="skill-info"><span class="skill-name">Git & GitHub</span><span class="skill-percentage">90%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" data-progress="90"></div></div>
+              </div>
+              <div class="skills-item">
+                <div class="skill-info"><span class="skill-name">VS Code</span><span class="skill-percentage">95%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" data-progress="95"></div></div>
+              </div>
+              <div class="skills-item">
+                <div class="skill-info"><span class="skill-name">Figma UI Design</span><span class="skill-percentage">75%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" data-progress="75"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Education Section -->
+    <section id="education" class="education">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">Education</span>
+          <h2 class="section-title">Academic Achievements</h2>
+        </div>
+        
+        <div class="timeline stagger-container">
+          <!-- B.Tech degree timeline -->
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479L12 21l-6.83-3.943a12.078 12.078 0 01.662-6.48L12 14z"></path></svg>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-period">2020 - 2024</div>
+              <h3 class="timeline-title">Bachelor of Technology</h3>
+              <h4 class="timeline-subtitle text-gradient">Information Technology</h4>
+              <p class="timeline-desc">
+                Completed undergraduate degree at <strong>Alliance University</strong> with an in-depth study of algorithms, database architectures, object-oriented concepts, and software methodologies. Actively engaged in coding workshops and tech club events.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">Projects</span>
+          <h2 class="section-title">My Created Works</h2>
+        </div>
+
+        <!-- Filter controls -->
+        <div class="projects-filter animate-on-scroll" role="tablist" aria-label="Project categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+          <button class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend Only</button>
+          <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Java Full Stack</button>
+        </div>
+        
+        <div class="projects-grid stagger-container">
+          <!-- Project 1: E-commerce Website -->
+          <article class="project-card animate-on-scroll" data-category="fullstack">
+            <div class="project-image-box">
+              <div class="project-badges">
+                <span class="project-badge">Java EE</span>
+                <span class="project-badge">MySQL</span>
+              </div>
+              <img src="assets/images/project-ecommerce.png" alt="E-commerce Website dashboard mockup" class="project-image" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">E-commerce Website</h3>
+              <p class="project-desc">
+                A premium, responsive online catalog and shopping application built on Servlet APIs and MySQL database with active session storage.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+                <a href="https://demo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Food Delivery App -->
+          <article class="project-card animate-on-scroll" data-category="fullstack">
+            <div class="project-image-box">
+              <div class="project-badges">
+                <span class="project-badge">Servlets</span>
+                <span class="project-badge">JS / CSS</span>
+              </div>
+              <img src="assets/images/project-food.png" alt="Food Delivery App dashboard mockup" class="project-image" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Food Delivery App</h3>
+              <p class="project-desc">
+                An interactive full-stack food delivery program containing restaurant menus, client shopping carts, and delivery route tracking indicators.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+                <a href="https://demo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: TAP Academy Clone -->
+          <article class="project-card animate-on-scroll" data-category="frontend">
+            <div class="project-image-box">
+              <div class="project-badges">
+                <span class="project-badge">HTML / CSS</span>
+                <span class="project-badge">UI Clone</span>
+              </div>
+              <img src="assets/images/project-tap.png" alt="TAP Academy learning platform clone" class="project-image" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">TAP Academy Clone</h3>
+              <p class="project-desc">
+                A fully responsive replication of the TAP Academy coding platform with interactive menus and course path navigation.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+                <a href="https://demo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Personal Portfolio -->
+          <article class="project-card animate-on-scroll" data-category="frontend">
+            <div class="project-image-box">
+              <div class="project-badges">
+                <span class="project-badge">HTML/CSS</span>
+                <span class="project-badge">Vanilla JS</span>
+              </div>
+              <div class="project-generic-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                <span>Portfolio Space</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Personal Portfolio</h3>
+              <p class="project-desc">
+                A beautiful, interactive portfolio showcasing development skills with customized light/dark theme switches and floating background physics.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+                <a href="https://demo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Product Landing Page -->
+          <article class="project-card animate-on-scroll" data-category="frontend">
+            <div class="project-image-box">
+              <div class="project-badges">
+                <span class="project-badge">CSS Grid</span>
+                <span class="project-badge">UX Design</span>
+              </div>
+              <div class="project-generic-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581a1.125 1.125 0 001.59 0l7.581-7.581a1.125 1.125 0 000-1.59L12.82 3.659A2.25 2.25 0 0011.398 3H9.568z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z"></path></svg>
+                <span>Product Showcase</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Product Landing Page</h3>
+              <p class="project-desc">
+                A sleek conversion-optimized product landing showcase focusing on smooth typographic layout systems and image sliders.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+                <a href="https://demo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: College Fest Landing Page -->
+          <article class="project-card animate-on-scroll" data-category="frontend">
+            <div class="project-image-box">
+              <div class="project-badges">
+                <span class="project-badge">Flexbox</span>
+                <span class="project-badge">Animations</span>
+              </div>
+              <div class="project-generic-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 0L21 9M19.5 6l-3.5 7M9 9v9m0-9a3 3 0 00-3-3m3 3a3 3 0 013 3v9m-6-3a2 2 0 11-4 0m4 0a2 2 0 10-4 0m4 0v-9m15 9a2 2 0 11-4 0m4 0a2 2 0 10-4 0m4 0V9"></path></svg>
+                <span>Fest Portal</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">College Fest Page</h3>
+              <p class="project-desc">
+                An event landing system containing timelines, registration sections, and interactive photo galleries.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+                <a href="https://demo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 7: Instagram UI Clone -->
+          <article class="project-card animate-on-scroll" data-category="frontend">
+            <div class="project-image-box">
+              <div class="project-badges">
+                <span class="project-badge">UI Layout</span>
+                <span class="project-badge">CSS Flex</span>
+              </div>
+              <div class="project-generic-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316A2.192 2.192 0 0014.502 4h-5c-.7 0-1.343.372-1.68 1.054l-.822 1.317z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9z"></path></svg>
+                <span>Instagram UI</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Instagram UI Clone</h3>
+              <p class="project-desc">
+                A pixel-perfect UI rendering of the Instagram feed, search, and user profile page layouts.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+                <a href="https://demo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 8: LinkedIn UI Clone -->
+          <article class="project-card animate-on-scroll" data-category="frontend">
+            <div class="project-image-box">
+              <div class="project-badges">
+                <span class="project-badge">UI Layout</span>
+                <span class="project-badge">HTML / CSS</span>
+              </div>
+              <div class="project-generic-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.97 5.97 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4 0 2.25 2.25 0 014 0zm-13.5 0a2.25 2.25 0 11-4 0 2.25 2.25 0 014 0z"></path></svg>
+                <span>LinkedIn UI</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">LinkedIn UI Clone</h3>
+              <p class="project-desc">
+                Recreation of the LinkedIn professional network feed, connections panels, and navigation menu bars.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+                <a href="https://demo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 9: Spotify UI Clone -->
+          <article class="project-card animate-on-scroll" data-category="frontend">
+            <div class="project-image-box">
+              <div class="project-badges">
+                <span class="project-badge">Audio Interface</span>
+                <span class="project-badge">JS Controls</span>
+              </div>
+              <div class="project-generic-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg>
+                <span>Spotify UI</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Spotify UI Clone</h3>
+              <p class="project-desc">
+                A dark-themed music streaming interface replica with sidebar navigators and simulated play controls.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+                <a href="https://demo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 10: Netflix UI Clone -->
+          <article class="project-card animate-on-scroll" data-category="frontend">
+            <div class="project-image-box">
+              <div class="project-badges">
+                <span class="project-badge">Video Slider</span>
+                <span class="project-badge">Transitions</span>
+              </div>
+              <div class="project-generic-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 12l-6.75 3.897V8.103L15.75 12z"></path></svg>
+                <span>Netflix UI</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Netflix UI Clone</h3>
+              <p class="project-desc">
+                An elegant video showcase and movie list selection grid built with custom hover card previews.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+                <a href="https://demo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Experience & Certifications -->
+    <section id="certifications" class="certifications">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">Credentials</span>
+          <h2 class="section-title">Internships & Certifications</h2>
+        </div>
+        
+        <div class="certs-grid stagger-container">
+          <!-- Internship Card -->
+          <article class="cert-card animate-on-scroll">
+            <span class="cert-type">Experience</span>
+            <h3 class="cert-title">IBM SkillsBuild AI Internship</h3>
+            <h4 class="cert-issuer">IBM SkillsBuild</h4>
+            <p class="cert-desc">
+              Completed professional training in Artificial Intelligence integrations. Built web applications incorporating cognitive service connections and smart user layouts.
+            </p>
+            <div class="cert-meta">
+              <span>Verified Credential</span>
+              <a href="https://skillsbuild.org" target="_blank" rel="noopener noreferrer" class="cert-verify-link" aria-label="Verify IBM Internship">
+                Verify
+                <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Oracle Certifications Card -->
+          <article class="cert-card animate-on-scroll">
+            <span class="cert-type">Certification</span>
+            <h3 class="cert-title">Oracle Certifications</h3>
+            <h4 class="cert-issuer">Oracle Corporation</h4>
+            <p class="cert-desc">
+              Acquired validation in Java SE concepts, focusing on object-oriented programming principles, multi-threading, stream handling, and Java Database Connectivity (JDBC).
+            </p>
+            <div class="cert-meta">
+              <span>Verified Credential</span>
+              <a href="https://oracle.com" target="_blank" rel="noopener noreferrer" class="cert-verify-link" aria-label="Verify Oracle Certification">
+                Verify
+                <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- TAP Academy Course Card -->
+          <article class="cert-card animate-on-scroll">
+            <span class="cert-type">Certification</span>
+            <h3 class="cert-title">Java Full Stack Training</h3>
+            <h4 class="cert-issuer">TAP Academy</h4>
+            <p class="cert-desc">
+              Successfully completed intensive training in Core Java, JDBC connections, Servlets, JSP templates, MySQL tables, alongside responsive frontend styles (HTML5, CSS3, JavaScript).
+            </p>
+            <div class="cert-meta">
+              <span>Course Certification</span>
+              <a href="https://tapacademy.com" target="_blank" rel="noopener noreferrer" class="cert-verify-link" aria-label="Verify TAP Academy Certificate">
+                Verify
+                <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">Get in touch</span>
+          <h2 class="section-title">Let's Work Together</h2>
+        </div>
+        
+        <div class="contact-grid">
+          <div class="contact-info animate-on-scroll">
+            <h3 class="contact-title">Connect with Prabanjan</h3>
+            <p class="contact-desc">
+              Feel free to reach out for project collaborations, full stack roles, or inquiries. I'm always open to discussing new opportunities and technical integrations.
+            </p>
+            
+            <div class="contact-methods">
+              <div class="contact-item">
+                <div class="contact-icon-box" aria-hidden="true">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                </div>
+                <div>
+                  <div class="contact-label">Email</div>
+                  <a href="mailto:prabanjanuv@gmail.com" class="contact-value text-gradient">prabanjanuv@gmail.com</a>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon-box" aria-hidden="true">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                </div>
+                <div>
+                  <div class="contact-label">Phone</div>
+                  <div class="contact-value">+91 94495 01521</div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon-box" aria-hidden="true">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                </div>
+                <div>
+                  <div class="contact-label">Location</div>
+                  <div class="contact-value">Bengaluru, India</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact form container -->
+          <div class="contact-form-container animate-on-scroll">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                <span class="error-message" role="alert"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="email@example.com" required>
+                <span class="error-message" role="alert"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-input" rows="5" placeholder="Write your message..." required></textarea>
+                <span class="error-message" role="alert"></span>
+              </div>
+              
+              <button type="submit" class="btn btn-primary form-submit-btn">
+                Send Message
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"></path>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 10. Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-copy">
+        &copy; 2026 Prabanjan U V. All rights reserved. Built with passion and clean code.
+      </p>
+      
+      <div class="footer-socials">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="mailto:prabanjanuv@gmail.com" class="social-icon" aria-label="Send Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 11. Scroll To Top Toggle Button -->
+  <button class="scroll-top-btn" aria-label="Scroll to top of the page">
+    <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"></path>
+    </svg>
+  </button>
+
+  <!-- 12. Toast notifications -->
+  <div class="toast-msg" role="status" aria-live="polite">
+    <span class="toast-icon">
+      <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+      </svg>
+    </span>
+    <span>Message sent successfully!</span>
+  </div>
+
+  <!-- JavaScript script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
